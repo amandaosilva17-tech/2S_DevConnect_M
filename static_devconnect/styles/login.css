@@ -1,0 +1,35 @@
+main{
+    background-color: aqua;
+    min-height: 100vh; /*minimo e altura da janela do dispositivo*/
+    width: 100%;
+}
+
+main > div{
+    background-color: brown;
+    width:100%;
+    max-width: 342px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /*justify-content:  space-between;*/
+}
+
+form{
+    background-color: crimson;
+}
+
+#secao-cadastro{
+    background-color: blanchedalmond;
+}
+
+main > div > p{
+    background-color: cadetblue;
+}
+
+.estilo-formulario{
+    background-color: lightpink;
+    border: var(#B57171);
+    width: 100;
+}

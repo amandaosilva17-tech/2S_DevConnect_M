@@ -1,0 +1,45 @@
+/* 1 forma de ultilizar uma fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oi&display=swp');
+
+/* 2 forma de utilizar uma fonte*/
+@font-face {
+    font-family: Billabong;
+    src: url(../assets/fonts/Cherry_Bomb_One/CherryBombOne-Regular.ttf); 
+    
+}
+
+/* variaveis*/
+:root {
+    --cor-azul: #40608A;
+    --cor-marrom: #B57171;
+    --cor-bege: #E8B29B;
+    --cor-cinza: #B8B8B8;
+    --cor-rosa: #BD386B;
+    --cor-marrom: #C3786B;
+
+    --borda: 1px solid var(--cor-rosa);
+    --borda-arredondada: 2px;
+
+    --tamanho-fonte-lg: 20px;
+    --tamanho-fonte-md: 16px;
+    --tamanho-fonte-sm: 14px;
+
+} 
+
+/* SELETOR GLOBAL */
+*{
+  padding: 0; /*espaço interno*/
+ margin: 0; /*espaço externo*/
+
+ box-sizing: border-box; /*atribui espaços internos/externos e bordas no tamanho final do box*/
+ font-family: "Segoe UI";
+}
+body{
+    background-color: var(--cor-bege);
+}
+
+h1{
+    position: absolute; /*altera a posição do elemento*/
+    z-index: -1; /*camadas do elemento*/
+    opacity: 0; /*opacidade*/
+}
