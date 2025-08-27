@@ -43,3 +43,14 @@ h1{
     z-index: -1; /*camadas do elemento*/
     opacity: 0; /*opacidade*/
 }
+
+/*formulario*/
+.formulario-botao-azul{
+    background-color: var(--cor-rosa);
+    border-radius: var(--borda-arredondada);
+    border: none; /*tira a borda*/
+    height: 35px;
+    
+    color: #B8B8B8;
+    font-size: var(--tamanho-fonte-sm);
+}
