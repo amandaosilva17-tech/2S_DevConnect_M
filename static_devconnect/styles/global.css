@@ -1,11 +1,126 @@
-/* 1 forma de ultilizar uma fonte*/
+interno*/
+    margin: 0;
+    /*espaço externo*/
+
+    box-sizing: border-box;
+    /*atribui espaços internos/externos e bordas no tamanho final do box*/
+    font-family: "Segoe UI";
+}
+
+body {
+    background-color: var(--cor-bege);
+}
+
+h1 {
+    position: absolute;
+    /*altera a posição do elemento*/
+    z-index: -1;
+    /*camadas do elemento*/
+    opacity: 0;
+    /*opacidade*/
+}
+
+/*formulario*/
+.formulario-botao-azul {
+    background-color: var(--cor-rosa);
+    border-radius: var(--borda-arredondada);
+    border: none;
+    /*tira a borda*/
+    height: 35px;
+
+    color: #B8B8B8;
+    font-size: var(--tamanho-fonte-sm);
+}
+
+/*cabeçalho*/
+#cabecalho {
+    background-color: #BD386B;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    border-bottom: var(--cor-preta);
+}
+
+#texto-upload{
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    min-height: 35px; /*para se adaptar conforme seu conteudo*/
+    height: 35px;
+    padding: 5px;
+    background-color: #E8B29B;
+    color: var(--cor-azul);
+    text-align: center;
+    border-radius: var(--cor-bege);
+    font-weight: 500;
+}
+
+#cabecalho > nav {
+    width: 85%;
+    max-width: 900px;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+#foto-perfil{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.logo{
+    width: 15px;
+    height: 150px;
+}
+
+
+.cabecalho-acoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.cabecalho-acoes > a{
+    display: flex;
+    align-items: center;
+}
+
+.foto-perfil{
+    width: 40px;
+    height: 40px;
+    object-fit: cover; /*mantem a proporção para adaptar ao tamanho do elemento*/
+    object-position: center;
+    border-radius: 50%;
+}
+
+/* RESPONSIVO */
+@media only screen and (max-widht: 500px) {
+    #logo-mobile{
+        display: initial;
+    }
+    
+    #logo-desktop{
+        display: none;
+    }
+}
+
+/*seçao criar-publi*/
+.formulario-botao-azul{
+    width: 135pxS;
+}/* 1 forma de ultilizar uma fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oi&display=swp');
 
 /* 2 forma de utilizar uma fonte*/
 @font-face {
     font-family: Billabong;
-    src: url(../assets/fonts/Cherry_Bomb_One/CherryBombOne-Regular.ttf); 
-    
+    src: url(../assets/fonts/Cherry_Bomb_One/CherryBombOne-Regular.ttf);
+
 }
 
 /* variaveis*/
@@ -24,33 +139,5 @@
     --tamanho-fonte-md: 16px;
     --tamanho-fonte-sm: 14px;
 
-} 
-
-/* SELETOR GLOBAL */
-*{
-  padding: 0; /*espaço interno*/
- margin: 0; /*espaço externo*/
-
- box-sizing: border-box; /*atribui espaços internos/externos e bordas no tamanho final do box*/
- font-family: "Segoe UI";
-}
-body{
-    background-color: var(--cor-bege);
 }
 
-h1{
-    position: absolute; /*altera a posição do elemento*/
-    z-index: -1; /*camadas do elemento*/
-    opacity: 0; /*opacidade*/
-}
-
-/*formulario*/
-.formulario-botao-azul{
-    background-color: var(--cor-rosa);
-    border-radius: var(--borda-arredondada);
-    border: none; /*tira a borda*/
-    height: 35px;
-    
-    color: #B8B8B8;
-    font-size: var(--tamanho-fonte-sm);
-}

@@ -72,10 +72,9 @@ main > div > p{
 }
 
 .estilo-formulario{
-    background-color: var(--cor-cinza);
-    border: var(#B57171);
-    width: 100;
-    max-width: 342px;
+   width: 100%;
+    background-color: var(--cor-branco);
+    border: var(--borda);
 }
 
 main>div>p {
@@ -106,5 +105,13 @@ main>div>p {
 .formualario-campos > label{
     font-size: var(--tamanho-fonte-sm);
     color: var(--cor-cinza-escuro);
-    font-weight: 600; /**/
+    font-weight: 600; 
 }
+
+#criar-publi > form > textarea{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    resize: none; /*desabilita a redimensão do tamanho do elemento*/
+}
+
